@@ -1,17 +1,17 @@
 > Deep learning in Applied Settings
 
-Index
+### Index
 * Data Normalization
 * Weight Initialisation
 * Activation functions
 * Batch Normalisation
 * Regularizations
 * Dropout
-* Hyperparameters
-* Learning rates	
-* Batch size
-* Training epochs	
 * Optimizers
-* Objective/loss function
+* Objective/Loss function	
+* Hyperparameters
+	* Learning rates	
+	* Batch size
+	* Training epochs
 * Evaluation metrics
 	
