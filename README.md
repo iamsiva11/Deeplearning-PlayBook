@@ -9,9 +9,9 @@
 
 # Table of Contents 
 
-* Choosing appropriate Activation functions
+* Choosing appropriate activation functions
 * Weight initialisation
-* Hyperparameter Tuning
+* Hyperparameter tuning
     * Learning rate
 * Strategies to improve performance
 	* Ensembles 
@@ -20,15 +20,14 @@
 * Cost functions
 * Optimisation
 * Monitoring the training
-* Saving and Loading a Neural Network
+* Saving and Loading models
 * On GPUs
-* Trouble-shooting & Debugging Strategies
+* Trouble-shooting & debugging strategies
 * Applied Computer vision
 	* Data augmentation
 	* Transfer learning 
 * Applied Natural language processing
 * Advice from top practitioners
-
 
 ---
 
