@@ -11,27 +11,13 @@
 
 * Choosing appropriate Activation functions
 * Weight initialisation
+* Handling overfitting
 * Hyperparameter tuning
     * Learning rate
-
-* Generalisation and avoiding overfitting
-* Cost functions
-* Optimisation
-* Monitoring the training
-* On GPUs
-* Trouble-shooting & debugging strategies
-
-
-* Saving and Loading models
-* Data preprocessing & preparation
 * Strategies to improve performance
 	* Ensembles 
-* Applied Computer vision
-	* Data augmentation
-	* Transfer learning 
-* Applied Natural language processing
 * Advice from top practitioners
-
+* Trouble-shooting & debugging strategies
 
 ---
 
