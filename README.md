@@ -35,6 +35,11 @@
 
 ---
 
+![General Strategy for Successful NNets](image/succ-NNet.png)
+
+---
+
+
 # Choosing appropriate Activation functions
 
 Every activation function (or non-linearity) takes a single number and performs a certain fixed mathematical operation on it.
@@ -258,12 +263,3 @@ Larger momentum
 
 ---
 ---
-
-
-
-
-
-
-
-
-
