@@ -12,12 +12,7 @@
 * Choosing appropriate Activation functions
 * Weight initialisation
 * Handling overfitting
-* Hyperparameter tuning
-    * Learning rate
-* Strategies to improve performance
-	* Ensembles 
-* Advice from top practitioners
-* Trouble-shooting & debugging strategies
+* Optimisation Srategies 
 
 ---
 
@@ -246,6 +241,63 @@ network need n/(1-p) neurons.
 Longer training time
 Higher learning rate
 Larger momentum
+
+---
+---
+
+
+
+# Optimisation Strategies
+
+Optimization for neural Nets
+Updater and Optimization Algorithm
+Parameter updates
+
+Adaptive vs Manual Learning Rate and Momentum
+Currently, the most popular optimization algorithms actively in use include
+SGD, SGD with momentum, RMSProp, RMSProp with momentum, AdaDelta,
+and Adam. The choice of which algorithm to use, at this point, seems to depend
+largely on the user’s familiarity with the algorithm (for ease of hyperparameter
+tuning).
+In practice Adam is currently recommended as the default algorithm to use, and often works slightly better than RMSProp. However, it is often also worth trying SGD+Nesterov Momentum as an alternative. Choose the appropriate algorithm for weight updates - Stochastic Gradient Descent, Adagrad[7], RMS Prop, Adadelta[8], Adam[9]
+The two recommended updates to use are either SGD+Nesterov Momentum or Adam.
+It is currently not common to see L-BFGS or similar second-order methods applied to large-scale Deep Learning and Convolutional Neural Networks. Instead, SGD variants based on (Nesterov’s) momentum are more standard because they are simpler and scale more easily.
+
+
+### Hessian optimization
+
+Incorporates the gradient descent analogue of momentum (second-order changes) into weight and bias optimization. Demonstrably converges on a minimum in fewer steps than standard gradient descent. Requires considerably more memory than standard gradient descent because of the enormity of the Hessian matrix
+
+### Momentum-based gradient descent
+
+Inspired by Hessian optimization but avoids excessively large matrices
+To balance between speed and avoiding overshooting a minimum, involves tuning the momentum coefficient μ between zero and one on validation data
+Momentum update is another approach that almost always enjoys better converge rates on deep networks
+The simplest form of update is to change the parameters along the negative gradient direction (since the gradient indicates the direction of increase, but we usually wish to minimize a loss function).
+With Momentum update, the parameter vector will build up velocity in any direction that has consistent gradient.
+
+
+
+Momentum: Learning Direction Adaptation
+Improvement over SGD: Momentum
+Intuition Momentum
+Momentum
+Gradient Descent Stuck Issue
+Very slow at the plateau, Stuck at saddle point, Stuck at local minima
+Parameters build up velocity in direction of consistent gradient
+Movement is not only based on gradient, but also previous movement
+
+Nesterov Momentum (Momentum+nesterov)  	 
+Nesterov Momentum is a slightly different version of the momentum update has recently been gaining popularity. It enjoys stronger theoretical converge guarantees for convex functions and in practice it also consistently works slightly better than standard momentum.Nesterov’s accelerated gradient:
+
+Algorithms with Adaptive Learning Rates
+Adagrad,  MSprop, RMSProp
+
+Second order methods
+Newton’s method, L-BFGS
+In practice, it is currently not common to see L-BFGS or similar second-order methods applied to large-scale Deep Learning and Convolutional Neural Networks. Instead, SGD variants based on (Nesterov’s) momentum are more standard because they are simpler and scale more easily.
+Per-parameter adaptive learning rate methods
+BFGS, limited-memory BFGS
 
 ---
 ---
